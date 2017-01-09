@@ -1,13 +1,14 @@
 {
   "name": "MovieRatingEverywhere",
-  "version": "0.0.1",
-  "manifest_version": 2,
-  "description": "This extension was created with the awesome extensionizr.com",
-  "homepage_url": "http://extensionizr.com",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "description": "This extension gets data from IMDB website and shows on cinema websites",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
+    "128": "icons/icon128.png",
+    "96": "icons/icon128.png",
+    "256": "icons/icon256.png"
   },
   "default_locale": "en",
   "background": {

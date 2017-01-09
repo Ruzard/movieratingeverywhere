@@ -27,8 +27,13 @@
         source: 'h2.list-item-desc-title small',
         options: {cut_if_found: ["\\(\\d{4}\\)"], prespace:true}
     };
+    var astrikino = {
+        urlPattern: "astri.ee/apollo-kino/",
+        source: 'h5.card-title',
+        options: {cut_if_found: [".*\\/"], prespace:true}
+    };
 //forumcinemas.ee .small_txt[style*="clear: left;"]$destination::a.result_h4,rating_nextline,cut_if_found::IMAX 3D&&Something Else,
-    var rules = [forumcinemas, kinokosmos, apollo];
+    var rules = [forumcinemas, kinokosmos, apollo, astrikino]; 
 
     chrome.extension.onMessage.addListener(
         function (request, sender) {
